@@ -1,0 +1,16 @@
+{
+    "blogs": [
+        {
+            "url": "test-1",
+            "title": "Blog 1",
+            "author": "Test User 1",
+            "content": "<h2>Test Blog 1</h2><br> This works!"
+        },
+        {
+            "url": "test-2",
+            "title": "Blog 2",
+            "author": "Test User 2",
+            "content": "<h2>Test Blog 2</h2><br> This works as well!"
+        }
+    ]
+}
