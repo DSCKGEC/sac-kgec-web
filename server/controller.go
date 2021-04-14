@@ -1,6 +1,8 @@
 package server
 
 import (
+	"html/template"
+
 	"github.com/gin-gonic/gin"
 )
 
@@ -10,4 +12,14 @@ func RenderHome(c *gin.Context) {
 		"title":  "Students' Automobile Club KGEC",
 		"isHome": true,
 	})
+}
+
+// RenderBlog ...
+func RenderBlog(title, content string) gin.HandlerFunc {
+	return func(c *gin.Context) {
+		c.HTML(200, "blog.html", gin.H{
+			"title":   title,
+			"content": template.HTML(content),
+		})
+	}
 }
