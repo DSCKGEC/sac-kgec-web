@@ -1,6 +1,6 @@
-# Submission or project name
+# Students' Automobile Club, KGEC
 
-[![Contributors](https://img.shields.io/github/contributors/dsckgec/project-template.svg)](https://github.com/dsckgec/project-template/graphs/contributors) [![Forks](https://img.shields.io/github/forks/dsckgec/project-template.svg)](https://github.com/dsckgec/project-template/network/members) [![Issues](https://img.shields.io/github/issues/dsckgec/project-template.svg)](https://github.com/dsckgec/project-template/issues) [![Pull Request](https://img.shields.io/github/issues-pr-closed-raw/dsckgec/project-template)](https://github.com/dsckgec/project-template/pulls)
+[![Contributors](https://img.shields.io/github/contributors/dsckgec/sac-kgec-web.svg)](https://github.com/dsckgec/sac-kgec-web/graphs/contributors) [![Forks](https://img.shields.io/github/forks/dsckgec/sac-kgec-web.svg)](https://github.com/dsckgec/sac-kgec-web/network/members) [![Issues](https://img.shields.io/github/issues/dsckgec/sac-kgec-web.svg)](https://github.com/dsckgec/sac-kgec-web/issues) [![Pull Request](https://img.shields.io/github/issues-pr-closed-raw/dsckgec/sac-kgec-web)](https://github.com/dsckgec/sac-kgec-web/pulls)
 
 
 A basic GitHub repository template for initializing open source projects on a single click.
@@ -20,19 +20,35 @@ A basic GitHub repository template for initializing open source projects on a si
 
 ## Description
 
-### What's the problem?
+This project hosts the revamped version of SAC KGEC's official website
 
-### How can this project help?
-
-### The idea
 
 ## Project structure
 
 ```
+/
+  ├── .github/            github related files like PR templates, contribution guidelines
+  ├── client/             client side code            
+      ├── css/            stores all the css files
+      ├── img/            directory for images used in frontend
+      ├── js/             directory for frontend javascript           
+      ├── blogs.json      stores individual blogs as json
+      ├── *.html          all HTML files go here
+  ├── server/             server side code
+      ├── blogs.go        extracts blogs from the blogs.json from client side
+      ├── controller.go   handler functions for routes go here
+      ├── routes.go       endpoint definitions go here
+      ├── server.go       initiates the routes and the gin-gonic server
+  ├── .gitignore          stores files and directories to be ignored in commits
+  ├── go.mod              stores definitions of go packages and modules used
+  ├── go.sum              stores definitions of go packages and modules used
+  ├── LICENSE             the open source license
+  ├── main.go             entry point to the server
+  └── readme.md           project readme!
 ```
 
 ## Project roadmap
-
+> TODO: to be updated
 The project currently does the following things.
 
 - Feature 1
@@ -66,12 +82,12 @@ A step by step series of examples that tell you how to get a development env run
 
 ## Contributing
 
-Please read [contributing.md](contributing.md) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [contributing.md](./.github/contributing.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Authors
 
-<a href="https://github.com/DSCKGEC/project-template/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=DSCKGEC/project-template" />
+<a href="https://github.com/DSCKGEC/sac-kgec-web/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=DSCKGEC/sac-kgec-web" />
 </a>
 
 ## License
