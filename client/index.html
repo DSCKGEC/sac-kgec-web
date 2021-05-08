@@ -1,1 +1,67 @@
-<h1>Success!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    
+
+    
+    
+    
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>SAC KGEC Website</title>
+</head>
+<body>
+
+ 
+  <section class="showcase">
+    <header>
+      <h2 class="logo">Welcome to SAC KGEC</h2>
+      <div class="toggle"></div>
+    </header>
+    <video src="videos/frontvid.mp4" muted loop autoplay></video>
+    
+    <div class="overlay"></div>
+    <div class="text">
+      
+      <h3>Hello folks!!!</h3>
+      <p>This is the Offiicial Website of the Student's Automobile Club KGEC,
+        more and more exciting projects are coming soon. Stay tuned!
+        
+
+        
+      </p>
+      
+    </div>
+    <ul class="social">
+      <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+      <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+      <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+    </ul>
+  </section>
+  <div class="menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">Projects</a></li>
+      
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">About Us</a></li>
+    </ul>
+  </div>
+  <script>
+
+const menuToggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.showcase');
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      })
+
+  </script>
+    
+</body>
+</html>
