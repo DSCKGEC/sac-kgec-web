@@ -48,28 +48,25 @@ This project hosts the revamped version of SAC KGEC's official website
 ```
 
 ## Project roadmap
-> TODO: to be updated
-The project currently does the following things.
-
-- Feature 1
-- Feature 2
-- Feature 3
-
-See below for our future steps.
-
-- Feature 1
-- Feature 2
-- Feature 3
+```
+To be updated after today's meet
+```
 
 ## Getting started
-
+Everyone is welcomed to contribute to our project. Mentioning in bold, you do not need to know the tech stack and tools beforehand to be a part of our project. This is a learn-and-build projects where the contributors build alongside learning the various concepts and technologies involved.
+Below are a few prerequisites and installation guides:
 
 ### Prerequisites
-
+- Go - [download](https://golang.org/dl/)
+- A web browser
 
 ### Installing
 
 A step by step series of examples that tell you how to get a development env running.
+
+1. Fork and clone the repository followed by opening the project in your text editor (with a terminal)
+2. create a .env file and add this line `PORT=5000`
+3. That was all for setting up the project. Whenever you need to run the project, type go run main.go in the terminal
 
 
 ## Live demo
@@ -77,8 +74,8 @@ A step by step series of examples that tell you how to get a development env run
 
 ## Built with
 
-- []()
-- []()
+- Golang (with Gin-Gonic)
+- HTML, CSS, JS
 
 ## Contributing
 
