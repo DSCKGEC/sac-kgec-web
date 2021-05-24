@@ -20,9 +20,9 @@ func (server *Server) Run(port string) {
 
 	// Load HTML and Static files
 	server.Router.LoadHTMLGlob("client/*.html")
-	server.Router.Static("/css", "views/css")
-	server.Router.Static("/img", "views/img")
-	server.Router.Static("/js", "views/js")
+	server.Router.Static("/css", "client/css")
+	server.Router.Static("/img", "client/img")
+	server.Router.Static("/js", "client/js")
 
 	fmt.Printf(`SAC KGEC website live on port :%s!`, port)
 	fmt.Println()
