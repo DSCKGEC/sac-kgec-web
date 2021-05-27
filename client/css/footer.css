@@ -290,7 +290,7 @@ footer input {
 footer textarea {
   width: 100%;
   display: block;
-  padding-top: 6px;
+  padding: 0px;
   font-size: 0.95rem;
 }
 
@@ -307,6 +307,7 @@ footer .submit {
           box-shadow: 0 2px 2px 0 rgb(255 0 0/14%), 0 3px 1px -2px rgb(255 0 0/20%), 0 1px 5px 0 rgb(255 0 0/12%);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 footer .submit > input {
@@ -315,7 +316,6 @@ footer .submit > input {
   font-size: 1rem;
   text-transform: capitalize;
   letter-spacing: 2px;
-  cursor: pointer;
 }
 
 footer .submit:hover {
@@ -345,8 +345,9 @@ footer input:-webkit-autofill,
 footer input:-webkit-autofill:hover,
 footer input:-webkit-autofill:focus {
   /* border: 1px solid transparent; */
+  border: none;
   -webkit-text-fill-color: white;
-  -webkit-box-shadow: 0 0 0px 1000px #1d1d1d inset;
+  -webkit-box-shadow: 0 0 0px 1000px #272525 inset;
   caret-color: white;
   /* transition: background-color 5000s ease-in-out 0s; */
 }
