@@ -23,3 +23,11 @@ func RenderBlog(title, content string) gin.HandlerFunc {
 		})
 	}
 }
+
+//RenderAboutUs
+func RenderAboutUs(c *gin.Context) {
+	c.HTML(200, "about.html", gin.H{
+		"title":  "About Us",
+		"isHome": false,
+	})
+}
