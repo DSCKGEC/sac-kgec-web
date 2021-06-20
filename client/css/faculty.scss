@@ -1,0 +1,120 @@
+main.faculty {
+
+h1{
+color: #DDDDDD;
+text-shadow: 2px 2px 6px #393E46;
+margin-bottom: 5px;
+}
+h3{
+
+    color: #DDDDDD;
+}
+span{
+    font-size: 12px;
+    font-weight: 300;
+}
+.intro{
+    
+    width: 60%;
+    padding-top: 50px;
+    padding-left: 8%;
+}
+p{
+    color: #999696;
+}
+.top {
+    width: 38%;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 30px;
+    border-color: #950606;
+}
+section{
+    margin-left: 2.8%;
+    margin-bottom: 70px;
+}
+
+.container{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+  }
+
+.card{
+  position: relative;
+  height: 450px;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.08);
+  margin: 20px;
+  box-shadow: 0 5px 15px -5px black;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  
+}
+ .card .content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.5;
+    transition: 0.5s;
+  }
+ .card:hover .content{
+    opacity: 1;
+  }
+.image{
+  position: relative;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid rgba(0, 0, 0, 0.50);
+  }
+.pic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+    .sci{
+        position: absolute;
+        bottom: 50px;
+        left: 55px;
+       display: flex;
+      }
+
+      li{
+        list-style: none;
+        margin: 0 10px;
+        transform: translateY(50px);
+        transition: 0.5s;
+      }
+      a{
+        opacity: 0.5;
+        
+      }
+      a:hover{
+        opacity: 1;
+        transition: 0.5s;
+        
+      }
+
+.logo{
+    position: relative;
+    top: 3px;
+    height: 17px;
+    background-color: white;
+    border-radius: 100%;
+}
+
+}
