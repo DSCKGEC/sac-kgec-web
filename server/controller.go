@@ -27,7 +27,14 @@ func RenderBlog(title, content string) gin.HandlerFunc {
 // RenderFaculty ...
 func RenderFaculty(c *gin.Context) {
 	c.HTML(200, "faculty.html", gin.H{
-		"title":  "Faculty",
+		"title": "Faculty",
+	})
+}
+
+//RenderAboutUs
+func RenderAboutUs(c *gin.Context) {
+	c.HTML(200, "about.html", gin.H{
+		"title":  "About Us",
 		"isHome": false,
 	})
 }
