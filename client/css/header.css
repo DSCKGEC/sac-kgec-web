@@ -1,0 +1,154 @@
+@font-face {
+    font-family: Blazed;
+    src: url(font/Blazed.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: borderbox;
+}
+
+
+/*///////////////////////////////////////////////////// nav */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* width: 100vw; */
+    min-height: 20vh;
+    background-color: #0c0a09;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* ////////////////////////////////////////////////////logo */
+
+
+/* /////imglogo */
+
+#logoimg {
+    height: 7vw;
+    width: 7vw;
+    /* height: 100px;
+    width: 100px; */
+}
+
+#kgeclogo {
+    height: 5vw;
+    width: 5vw;
+    /* height: 80px;
+    width: 80px; */
+}
+
+
+/* //////logoname */
+
+.logo {
+    letter-spacing: 3px;
+    font-family: Blazed;
+    font-size: 3vw;
+    /* font-size: 2rem; */
+    color: rgb(255, 255, 255);
+}
+
+
+/*////////////// navlinks */
+
+.navlinks {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    width: 50vw;
+}
+
+.navlinks a {
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    color: #939191;
+    letter-spacing: 1px;
+    padding: 0px 18px 0px;
+}
+
+.navlinks a:hover {
+    /* color: #c73545c7; */
+    color: #da130e;
+    font-weight: 600;
+    /* border: 0.2px solid #c73545c7; */
+    box-shadow: 0px 0px 8px 0px;
+    /* border: 0.2px solid rgb(196, 190, 190); */
+    border-radius: 3px;
+    padding: 3px 15px;
+    box-sizing: border-box;
+    transition: border 0.4s, color 0.4s;
+}
+
+
+/* mobile version */
+
+.burger {
+    display: none;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: aliceblue;
+    margin: 4px;
+}
+
+@media screen and (max-width:940px) {
+    /* nav {
+        background-color: aqua;
+    } */
+    body {
+        overflow-x: hidden;
+    }
+    /* logos */
+    #logoimg {
+        height: 17vw;
+        width: 17vw;
+        /* height: 100px;
+        width: 100px; */
+    }
+    #kgeclogo {
+        height: 10vw;
+        width: 10vw;
+        /* height: 80px;
+        width: 80px; */
+    }
+    .logo {
+        font-size: 6vw;
+    }
+    /* nav---links */
+    .navlinks {
+        position: absolute;
+        right: 0px;
+        height: 80vh;
+        width: 50vw;
+        top: 19vh;
+        background-color: #0c0a09;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.4s ease-in;
+        /* visibility: hidden; */
+    }
+    /* .navlinks li { */
+    /* opacity: 0; */
+    /* } */
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+
+/* sliding-nav */
+
+.navactive {
+    transform: translateX(0%);
+}
