@@ -6,6 +6,7 @@ main.faculty h1 {
 
 main.faculty h3 {
   color: #DDDDDD;
+  margin: 1rem auto;
 }
 
 main.faculty span {
@@ -21,6 +22,7 @@ main.faculty .intro {
 
 main.faculty p {
   color: #999696;
+  margin: 1rem auto;
 }
 
 main.faculty .top {
@@ -120,10 +122,11 @@ main.faculty .pic {
 main.faculty .sci {
   position: absolute;
   bottom: 50px;
-  left: 55px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 1rem auto;
+  text-align: center;
 }
 
 main.faculty li {
@@ -153,3 +156,11 @@ main.faculty .logo {
   border-radius: 100%;
 }
 /*# sourceMappingURL=faculty.css.map */
+@media screen and (max-width:890px) {
+  main.faculty .intro {
+    width: 100%;
+    padding-top: 50px;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+}
